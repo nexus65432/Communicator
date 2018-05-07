@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_noti"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/gap_10dp"
+        android:layout_marginRight="@dimen/gap_10dp"
+        android:layout_marginTop="@dimen/gap_10dp"
+        android:background="@color/color_white"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/gap_2dp">
+
+        <TextView
+            android:id="@+id/notifications_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_5dp"
+            android:text="Notifications"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size16sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/noti_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:checked="false"
+            android:paddingRight="@dimen/gap_5dp"
+            android:theme="@style/MySwitch" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_terms"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/gap_10dp"
+        android:layout_marginRight="@dimen/gap_10dp"
+        android:layout_marginTop="@dimen/gap_10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/gap_2dp">
+
+        <TextView
+            android:id="@+id/terms_service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_5dp"
+            android:text="Terms &amp; Conditions"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size14sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/gap_10dp"
+        android:layout_marginRight="@dimen/gap_10dp"
+        android:layout_marginTop="@dimen/gap_10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/gap_2dp">
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_5dp"
+            android:text="Privacy Policy"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size14sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_share"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/gap_10dp"
+        android:layout_marginRight="@dimen/gap_10dp"
+        android:layout_marginTop="@dimen/gap_10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/gap_2dp">
+
+        <TextView
+            android:id="@+id/share_friends"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/gap_5dp"
+            android:text="Share"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_size14sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_logout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="@dimen/gap_10dp"
+        android:layout_marginRight="@dimen/gap_10dp"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/gap_2dp">
+
+        <TextView
+            android:id="@+id/sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/gap_5dp"
+            android:text="Logout"
+            android:textAllCaps="true"
+            android:textColor="@color/darkred"
+            android:textSize="@dimen/text_size16sp" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

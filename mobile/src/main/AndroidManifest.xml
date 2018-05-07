@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nexus.communicator">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".UI.Onboarding.OnboardingActivity"
+            android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UI.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".UI.Share.ShareWithFriends"
+            android:theme="@style/NoActionBarTheme">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+
+        <service android:name=".Service.MyMessagingService"></service>
+
+        <receiver android:name=".Receiver.MessageReadReceiver">
+            <intent-filter>
+                <action android:name="com.nexus.communicator.ACTION_MESSAGE_READ" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Receiver.MessageReplyReceiver">
+            <intent-filter>
+                <action android:name="com.nexus.communicator.ACTION_MESSAGE_REPLY" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.nexus.communicator.Receiver.PoyntCloudMessageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="poynt.intent.action.CLOUD_MESSAGE_RECEIVED" />
+                <category android:name="poynt.category.CLOUD_MESSAGE" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>

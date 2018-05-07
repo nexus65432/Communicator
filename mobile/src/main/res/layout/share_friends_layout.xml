@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <include layout="@layout/action_bar" />
+
+    <Button
+        android:id="@+id/user_permissions_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap_10dp"
+        android:layout_gravity="center"
+        android:text="@string/load_contact_msg"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contacts_listView"
+        style="@style/TTListView"
+        android:layout_marginTop="?attr/actionBarSize" />
+
+    <include layout="@layout/progressbar" />
+
+</FrameLayout>

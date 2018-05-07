@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:foreground="?android:selectableItemBackground"
+    android:layout_marginStart="@dimen/gap_10dp"
+    android:layout_marginEnd="@dimen/gap_10dp"
+    android:layout_marginTop="@dimen/gap_10dp"
+    app:cardCornerRadius="@dimen/gap_5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/contact_profile_pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/gap_10dp"
+            android:layout_marginRight="@dimen/gap_10dp"
+            android:src="@drawable/ic_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/contact_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/contact_profile_pic"
+            android:maxLines="1"
+            android:text="Test User"
+            android:textSize="@dimen/chat_username_size" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
